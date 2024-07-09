@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encriptador de Texto</h1>
+        <img src="Muñeco.png" alt="Imagen de presentación" class="presentation-image">
+        <textarea id="inputText" placeholder="Ingresa el texto aquí" oninput="processText()"></textarea>
+        <p id="warningMessage" class="warning">No se permiten mayúsculas ni caracteres especiales.</p>
+        <textarea id="outputText" readonly placeholder="Resultado"></textarea>
+        <div class="buttons">
+            <button onclick="encryptText()">Encriptar</button>
+            <button onclick="decryptText()">Desencriptar</button>
+            <button onclick="clearText()">Limpiar</button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2024 Encriptador de Texto - BY Gabriel Ojeda</p>
+    </footer>
+    <script src="text.js"></script>
+</body>
+</html>
